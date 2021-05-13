@@ -1,0 +1,16 @@
+.app {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        "nav header header header"
+        "nav card card card"
+        "nav graphic graphic diogramm"
+        "nav gistogram gistogram geo"
+    ;
+    grid-template-rows: 137px repeat(3, 1fr);
+    grid-template-columns: 98px repeat(3, 1fr);
+    height: 100vh;
+    grid-gap: 30px;
+}
+
