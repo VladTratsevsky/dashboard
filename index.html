@@ -5,38 +5,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>vk-dashboard</title>
     <link rel="stylesheet" href="src/styles/css/main.min.css">
 </head>
 
 <body>
-    <div class="app">
+    <div class="wrap">
         <header class="header">
+            <div class="title-inf">
+                <h1 class="header__title">Statistics</h1>
+                <form action="#" class="header__form"><input type="text" placeholder="Search"></form>
+                <a href="#" class="header__bell"></a>
+            </div>
+            <div class="account">
+                <h2 class="account__name">Anya</h2>
+                <img src="" alt="account__avatar">
+                <a href="#" class="account__menu"></a>
+            </div>
         </header>
         <nav class="nav">
-
+            <div class="nav__title"></div>
+            <ul class="nav__list">
+                <li class="nav__list-item_home"></li>
+                <li class="nav__list-item_nevs"></li>
+                <li class="nav__list-item_friends"></li>
+                <li class="nav__list-item_massage"></li>
+                <li class="nav__list-item_media"></li>
+                <li class="nav__list-item_statistics"></li>
+                <li class="nav__list-item_settings"></li>
+            </ul>
+            <div class="nav__switch"></div>
         </nav>
-        <div class="card">
-
-        </div>
-        <div class="card">
-
-        </div>
-        <div class="card">
-
-        </div>
-        <div class="graphic">
-
-        </div>
-        <div class="diogramm">
-
-        </div>
-        <div class="gistogram">
-
-        </div>
-        <div class="geo">
-
-        </div>
+        <main class="main">
+            <div class="card">
+                <div class="card__text">
+                    <h2 class="card__title">Friends</h2>
+                    <a href="#" class="card__menu"></a>
+                </div>
+                <div class="card__inf">
+                    <p class="card__value">271 people</p>
+                    <p class="card__value-change">+ 0,7%</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__text">
+                    <h2 class="card__title">Unique visitors</h2>
+                    <a href="#" class="card__menu"></a>
+                </div>
+                <div class="card__inf">
+                    <p class="card__value">69 people</p>
+                    <p class="card__value-change">- 1,7%</p>
+            </div>
+            <div class="card">
+                <div class="card__text">
+                    <h2 class="card__title">Followers</h2>
+                    <a href="#" class="card__menu"></a>
+                </div>
+                <div class="card__inf">
+                    <p class="card__value">288 people</p>
+                    <p class="card__value-change">+ 1%</p>
+            </div>
+            <div class="graphic">
+                <div class="graphic__head">
+                    <h2 class="graphic__head-title">Audience reach</h2>
+                    <div class="graphic__head-inf">
+                        <p class="graphic__head-date">31/01/2020 – 06/02/2020<p>
+                        <p class="graphic__head-total">Total</p>
+                        <p class="graphic__head-follower">Follower</p>
+                    </div>
+                </div>
+                <div class="graphic__body"><img src="" alt="graphic" class="graphic-img"></div>
+            </div>
+            <div class="diogramm">
+                <h2 class="diogramm__title">Reach by device</h2>
+                <div class="diogramm__body">
+                    <img src="" alt="diogramm" class="diogramm-img">
+                    <div class="diogramm__text">
+                        <p class="diogramm__text-Desktop">Desktop</p>
+                        <p class="diogramm__text-Mobile-views">Mobile views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gistogram">
+                <div class="gistogram__head">
+                    <h2 class="gistogram__head-title">Gender / Age</h2>
+                    <div class="gistogram__head-inf">
+                        <p class="gistogram__head-women">women</p>
+                        <p class="gistogram__head-men">men</p>
+                    </div>
+                </div>
+                <div class="gistogram__body"><img src="" alt="gistogram" class="gistogram-img"></div>
+            </div>
+            <div class="geo">
+                <div class="geo__head">
+                    <h2 class="geo__head-title">Geo</h2>
+                    <div class="geo__head-inf">
+                        <p class="geo__head-Country">Country</p>
+                        <p class="geo__head-City">City</p>
+                    </div>
+                </div>
+                <div class="geo__body">
+                    <div class="geo__body-left">
+                        <div class="geo__body__card">
+                            <h3 class="geo__body__card-title">Russia</h3>
+                            <p class="geo__body__card-text">94%</p>
+                            <div class="geo__body__card-img_rus"></div>
+                        </div>
+                        <div class="geo__body__card">
+                            <h3 class="geo__body__card-title">Ukraine</h3>
+                            <p class="geo__body__card-text">0,20%</p>
+                            <div class="geo__body__card-img_uk"></div>
+                        </div>
+                        <div class="geo__body__card">
+                            <h3 class="geo__body__card-title">Mongolia</h3>
+                            <p class="geo__body__card-text">0,13%</p>
+                            <div class="geo__body__card-img_mg"></div>
+                        </div>
+                    </div>
+                    <div class="geo__body-right">
+                        <div class="geo__body__card">
+                            <h3 class="geo__body__card-title">China</h3>
+                            <p class="geo__body__card-text">0,26%</p>
+                            <div class="geo__body__card-img_ch"></div>
+                        </div>
+                        <div class="geo__body__card">
+                            <h3 class="geo__body__card-title">USA</h3>
+                            <p class="geo__body__card-text">0,20%</p>
+                            <div class="geo__body__card-img_us"></div>
+                        </div>
+                        <div class="geo__body__card">
+                            <h3 class="geo__body__card-title">Other</h3>
+                            <p class="geo__body__card-text">1,37%</p>
+                            <div class="geo__body__card-img_other"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 </body>
 
