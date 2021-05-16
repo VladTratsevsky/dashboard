@@ -1,0 +1,108 @@
+@media (max-width:1280px) {
+    .main {
+        grid-template-areas:
+            "card card"
+            "card card"
+            "card card"
+            "graphic graphic"
+            "diogramm geo"
+            "gistogram gistogram"
+        ;
+        grid-template-rows: repeat(3,148px) repeat(3, 242px);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+
+    .nav {
+        position: fixed;
+        height: 100vh;
+    }
+
+    .wrap {
+        max-height: none;
+    }
+}
+
+
+
+@media (max-width: 826px) {
+    .main {
+        padding: 0px 50px 50px 50px;
+         grid-template-areas:
+            "card "
+            "card "
+            "card "
+            "graphic"
+            "diogramm" 
+            "geo"
+            "gistogram" 
+            "gistogram"
+        ;
+        grid-template-rows: repeat(3,148px) repeat(3, 242px);
+        grid-template-columns: 1fr;
+    }    
+
+    .card {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav-btn {
+        display: block;
+    }
+}
+
+@media (max-width:728px) {
+    .header {
+        flex-flow: column-reverse;
+        height: auto;
+        padding-left: 0;
+    }
+    
+    .title-inf {
+        flex-flow: column;
+        align-items: center;
+        padding-left: 0;
+        width: 90%;
+    }
+    
+    .header__title { 
+        margin: 25px 0;
+    }
+    
+    .header__form {
+        width: 100%;
+    }
+
+    .header__form-input {
+        width: 100%;
+    }
+
+    .form-container {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    
+    .header__account {
+        display: flex;
+        align-items: center;
+        padding-right: 40px;
+        padding-top: 20px;
+    }
+    
+    .nav-btn {
+        top: 35px;
+    }
+
+    .main {
+        padding: 0px 10px 10px 10px;
+    }
+}

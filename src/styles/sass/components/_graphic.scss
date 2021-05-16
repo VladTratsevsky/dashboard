@@ -1,6 +1,6 @@
 .graphic {
+    overflow-x: auto;
     grid-area: graphic;
-    
     padding: 25px;
     background: #282C31;
     border: 1px solid #4D4D4D;
@@ -10,6 +10,7 @@
 .graphic__head {
     display: flex;
     justify-content: space-between;
+    min-width: 674px;
     margin-bottom: 24px;
 }
 
@@ -72,4 +73,6 @@
 
 .graphic-img {
     width: 100%;
+    min-width: 674px;
+    height: 141px;
 }

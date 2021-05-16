@@ -20,7 +20,7 @@
     ;
     grid-template-rows: 148px repeat(2, 242px);
     grid-template-columns: repeat(3, 1fr);
-    height: 792px;
+    min-height: 792px;
     grid-gap: 32px;
     font-size: 20px;
 }

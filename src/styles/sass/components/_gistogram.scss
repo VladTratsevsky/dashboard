@@ -1,4 +1,5 @@
 .gistogram {
+    overflow-x: auto;
     grid-area: gistogram;
     padding: 23px 34px 0px 0px;
     background: #282C31;
@@ -10,6 +11,7 @@
 .gistogram__head {
     display: flex;
     justify-content: space-between;
+    min-width: 631px;
     padding: 0px 41px 0px 24px;
     margin-bottom: 21px;
 }
@@ -50,4 +52,10 @@
     vertical-align: middle;
     margin-right: 10px;
     content: url(../../images/icons/rectangle-blu.png);
+}
+
+.gistogram-img {
+    width: 100%;
+    min-width: 631px;
+    height: 141px;
 }
