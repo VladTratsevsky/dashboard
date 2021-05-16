@@ -6,6 +6,7 @@
     border-radius: 14px;
     font-family: 'Open Sans', sans-serif;
     color: #CACACA;
+    background: #212427;
 }
 
 .main {
@@ -17,7 +18,7 @@
         "graphic graphic diogramm"
         "gistogram gistogram geo"
     ;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 148px repeat(2, 242px);
     grid-template-columns: repeat(3, 1fr);
     height: 792px;
     grid-gap: 32px;

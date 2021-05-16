@@ -1,5 +1,42 @@
 .card {
     grid-area: card;
     grid-column: span 1;
-    background-color: red;
+    background: #282C31;
+    border: 1px solid #4D4D4D;
+    border-radius: 13px;
+    box-sizing: border-box;
+    padding: 24px;
+}
+
+.card__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 47px;
+}
+
+.card__title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.card__menu {
+    width: 26px;
+    height: 5px;
+    background: url(../../images/icons/ellipsis.png);
+}
+
+.card__inf {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__value {
+    margin: 0;
+}
+
+.card__value-change {
+    margin: 0;
 }

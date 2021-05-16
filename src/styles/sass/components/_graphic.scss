@@ -1,4 +1,75 @@
 .graphic {
     grid-area: graphic;
-    background-color: darkgray;
+    
+    padding: 25px;
+    background: #282C31;
+    border: 1px solid #4D4D4D;
+    border-radius: 13px;
+}
+
+.graphic__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.graphic__head-title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.graphic__head-inf {
+    display: flex;
+    align-items: center;
+    padding-right: 63px;
+}
+
+.graphic__head-date {
+    margin: 0;
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.date-menu {
+    margin-right: 42px;
+    height: 5px;
+    width: 10px;
+    background: url(../../images/icons/bracket.png);
+}
+
+.graphic__head-total {
+    margin: 0;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.total-menu {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    background: url(../../images/icons/total.png);
+}
+
+.graphic__head-follower {
+    margin: 0;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.follower-menu {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    background: url(../../images/icons/follower.png);
+}
+
+.graphic-img {
+    width: 100%;
 }

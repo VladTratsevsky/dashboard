@@ -12,8 +12,14 @@
 }
 
 .nav__title {
-    padding: 53px 0px 153px;
-    background: url(../../../images/icons/logo.svg);
+    height: 230px;
+    padding: 53px 0px 153px 0px;
+}
+
+.nav-logo {
+    width: 42px;
+    height: 24px;
+    background: url(../../images/icons/logo.svg) no-repeat;
 }
 .nav__list {
     display: grid;
@@ -60,5 +66,5 @@
 .home-link {
     width: 25px;
     height: 25px;
-    background: url(../../../images/icons/home.svg);
+    background: url(../../images/icons/home.svg);
 }

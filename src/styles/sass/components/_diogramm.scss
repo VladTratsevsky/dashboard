@@ -1,4 +1,44 @@
 .diogramm {
     grid-area: diogramm;
-    background-color: blue;
+    background: #282C31;
+    border: 1px solid #4D4D4D;
+    border-radius: 13px;
+    padding: 22px 10px;
+}
+
+.diogramm__title {
+    margin: 0px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.diogramm__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.diogramm__text-Desktop {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.diogramm__text-Desktop::before {
+    vertical-align: middle;
+    margin-right: 10px;
+    content: url(../../images/icons/Rectangle-pink.png);
+}
+
+.diogramm__text-Mobile-views {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.diogramm__text-Mobile-views::before {
+    vertical-align: middle;
+    margin-right: 10px;
+    content: url(../../images/icons/rectangle-blu.png);
 }

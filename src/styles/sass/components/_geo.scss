@@ -1,4 +1,45 @@
 .geo {
     grid-area: geo;
-    background-color: blueviolet;
+    padding: 24px;
+    background: #282C31;
+    border: 1px solid #4D4D4D;
+    box-sizing: border-box;
+    border-radius: 13px;
+}
+
+.geo__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.geo__head-title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.geo__head-inf {
+    display: flex;
+    align-items: center;
+}
+
+.geo__head-Country {
+    margin: 0;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #CACACA;
+    text-decoration: none;
+}
+
+.geo__head-City {
+    margin: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #979797;
+    text-decoration: none;
 }
