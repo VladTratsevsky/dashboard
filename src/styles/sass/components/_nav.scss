@@ -1,4 +1,64 @@
 .nav {
+    position: absolute;
+    left: 0;
+    top: 0;
     grid-area: nav;
-    background-color: darkkhaki;
+    display: flex;
+    flex-flow: column;
+    width: 98px;
+    height: 880px;
+    background: #282C31;
+    border: 1px solid #4D4D4D;
+}
+
+.nav__title {
+    padding: 53px 0px 153px;
+    background: url(../../../images/icons/logo.svg);
+}
+.nav__list {
+    display: grid;
+    grid-template-areas: 
+        "home"
+        "news"
+        "friends"
+        "massage"
+        "media"
+        "statistics"
+        "settings"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 65px);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.nav__list-item_home {
+    grid-area: home;
+}
+.nav__list-item_news {
+    grid-area: news;
+}
+.nav__list-item_friends {
+    grid-area: friends;
+}
+.nav__list-item_massage {
+    grid-area: massage;
+}
+.nav__list-item_media {
+    grid-area: media;
+}
+.nav__list-item_statistics {
+    grid-area: statistics;
+}
+.nav__list-item_settings {
+    grid-area: settings;
+}
+.nav__switch {
+    padding: 142px 0px 48px;
+}
+
+.home-link {
+    width: 25px;
+    height: 25px;
+    background: url(../../../images/icons/home.svg);
 }

@@ -1,16 +1,26 @@
-.app {
+.wrap {
+    position: relative;
     max-width: 1280px;
+    max-height: 880px;
     margin: 0 auto;
+    border-radius: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #CACACA;
+}
+
+.main {
+    max-width: 1180px;
+    padding: 0px 50px 50px 146px;
     display: grid;
     grid-template-areas:
-        "nav header header header"
-        "nav card card card"
-        "nav graphic graphic diogramm"
-        "nav gistogram gistogram geo"
+        "card card card"
+        "graphic graphic diogramm"
+        "gistogram gistogram geo"
     ;
-    grid-template-rows: 137px repeat(3, 1fr);
-    grid-template-columns: 98px repeat(3, 1fr);
-    height: 100vh;
-    grid-gap: 30px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    height: 792px;
+    grid-gap: 32px;
+    font-size: 20px;
 }
 

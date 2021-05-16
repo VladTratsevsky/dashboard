@@ -7,35 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vk-dashboard</title>
     <link rel="stylesheet" href="src/styles/css/main.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="wrap">
-        <header class="header">
-            <div class="title-inf">
-                <h1 class="header__title">Statistics</h1>
-                <form action="#" class="header__form"><input type="text" placeholder="Search"></form>
-                <a href="#" class="header__bell"></a>
-            </div>
-            <div class="account">
-                <h2 class="account__name">Anya</h2>
-                <img src="" alt="account__avatar">
-                <a href="#" class="account__menu"></a>
-            </div>
-        </header>
         <nav class="nav">
             <div class="nav__title"></div>
             <ul class="nav__list">
-                <li class="nav__list-item_home"></li>
-                <li class="nav__list-item_nevs"></li>
-                <li class="nav__list-item_friends"></li>
-                <li class="nav__list-item_massage"></li>
-                <li class="nav__list-item_media"></li>
-                <li class="nav__list-item_statistics"></li>
-                <li class="nav__list-item_settings"></li>
+                <li class="nav__list-item_home"><a href="#" class="home-link"></a></li>
+                <li class="nav__list-item_news"><a href="#" class="news-link"></a></li>
+                <li class="nav__list-item_friends"><a href="#" class="friends-link"></a></li>
+                <li class="nav__list-item_massage"><a href="#" class="massage-link"></a></li>
+                <li class="nav__list-item_media"><a href="#" class="media-link"></a></li>
+                <li class="nav__list-item_statistics"><a href="#" class="statistics-link"></a></li>
+                <li class="nav__list-item_settings"><a href="#" class="settings-link"></a></li>
             </ul>
             <div class="nav__switch"></div>
         </nav>
+        <header class="header">
+            <div class="title-inf">
+                <h1 class="header__title">Statistics</h1>
+                <form action="#" class="header__form"><input class="header__form-input" type="text" placeholder="Search"></form>
+                <a href="#" class="header__bell"></a>
+            </div>
+            <div class="header__account">
+                <h2 class="account__name">Anya</h2>
+                <img src="src/images/avatar/avatar.png" alt="account-avatar" class="account__img">
+                <a href="#" class="account__menu"></a>
+            </div>
+        </header>
         <main class="main">
             <div class="card">
                 <div class="card__text">
@@ -55,6 +57,7 @@
                 <div class="card__inf">
                     <p class="card__value">69 people</p>
                     <p class="card__value-change">- 1,7%</p>
+                </div>>
             </div>
             <div class="card">
                 <div class="card__text">
@@ -64,6 +67,7 @@
                 <div class="card__inf">
                     <p class="card__value">288 people</p>
                     <p class="card__value-change">+ 1%</p>
+                </div>
             </div>
             <div class="graphic">
                 <div class="graphic__head">
