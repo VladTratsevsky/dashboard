@@ -1,17 +1,13 @@
 .diogramm {
     grid-area: diogramm;
-    background: #282C31;
-    border: 1px solid #4D4D4D;
-    border-radius: 13px;
+    @include border-card;
     padding: 22px 10px;
 }
 
 .diogramm__title {
-    margin: 0px;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 20px;
+    @include title-text;
+    padding-left: 9px;
+    margin-bottom: 26px;
 }
 
 .diogramm__body {
@@ -20,9 +16,9 @@
 }
 
 .diogramm__text-Desktop {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 14px;
+    @include inf-text;
+    padding-top: 13px;
+    margin-bottom: 10px;
 }
 
 .diogramm__text-Desktop::before {
@@ -32,9 +28,7 @@
 }
 
 .diogramm__text-Mobile-views {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 14px;
+    @include inf-text;
 }
 
 .diogramm__text-Mobile-views::before {

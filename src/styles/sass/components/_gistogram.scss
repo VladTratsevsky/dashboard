@@ -1,26 +1,21 @@
 .gistogram {
     overflow-x: auto;
     grid-area: gistogram;
-    padding: 23px 34px 0px 0px;
-    background: #282C31;
-    border: 1px solid #4D4D4D;
+    padding: 23px 0px 0px 9px;
     box-sizing: border-box;
-    border-radius: 13px;
+    @include border-card;
 }
 
 .gistogram__head {
     display: flex;
     justify-content: space-between;
-    min-width: 631px;
-    padding: 0px 41px 0px 24px;
+    width: 659px;
+    padding-left: 15px;
     margin-bottom: 21px;
 }
 
 .gistogram__head-title {
-    margin: 0;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 24px;
+   @include title-text;
 }
 
 .gistogram__head-inf {
@@ -28,11 +23,8 @@
 }
 
 .gistogram__head-women {
-    margin: 0;
+    @include inf-text;
     margin-right: 15px;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 14px;
 }
 
 .gistogram__head-women::before {
@@ -42,20 +34,11 @@
 }
 
 .gistogram__head-men {
-    margin: 0;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 14px;
+    @include inf-text;
 }
 
 .gistogram__head-men::before {
     vertical-align: middle;
     margin-right: 10px;
     content: url(../../images/icons/rectangle-blu.png);
-}
-
-.gistogram-img {
-    width: 100%;
-    min-width: 631px;
-    height: 141px;
 }

@@ -2,9 +2,7 @@
     overflow-x: auto;
     grid-area: graphic;
     padding: 25px;
-    background: #282C31;
-    border: 1px solid #4D4D4D;
-    border-radius: 13px;
+    @include border-card;
 }
 
 .graphic__head {
@@ -15,24 +13,18 @@
 }
 
 .graphic__head-title {
-    margin: 0;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 24px;
+    @include title-text;
 }
 
 .graphic__head-inf {
     display: flex;
     align-items: center;
-    padding-right: 63px;
+    padding-right: 38px;
 }
 
 .graphic__head-date {
-    margin: 0;
+    @include inf-text(500);
     margin-right: 10px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
 }
 
 .date-menu {
@@ -43,11 +35,8 @@
 }
 
 .graphic__head-total {
-    margin: 0;
+    @include inf-text(500);
     margin-right: 10px;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 14px;
 }
 
 .total-menu {
@@ -58,10 +47,7 @@
 }
 
 .graphic__head-follower {
-    margin: 0;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 14px;
+    @include inf-text;
 }
 
 .follower-menu {
@@ -72,7 +58,5 @@
 }
 
 .graphic-img {
-    width: 100%;
-    min-width: 674px;
-    height: 141px;
+    width: 674px;
 }

@@ -1,35 +1,5 @@
-@media (max-width:1280px) {
-    .main {
-        grid-template-areas:
-            "card card"
-            "card card"
-            "card card"
-            "graphic graphic"
-            "diogramm geo"
-            "gistogram gistogram"
-        ;
-        grid-template-rows: repeat(3,148px) repeat(3, 242px);
-        grid-template-columns: repeat(2, 1fr);
-    }
 
-    .card {
-        grid-row: span 1;
-        grid-column: span 2;
-    }
-
-    .nav {
-        position: fixed;
-        height: 100vh;
-    }
-
-    .wrap {
-        max-height: none;
-    }
-}
-
-
-
-@media (max-width: 826px) {
+@media (max-width: 992px) {
     .main {
         padding: 0px 50px 50px 50px;
          grid-template-areas:
@@ -46,6 +16,11 @@
         grid-template-columns: 1fr;
     }    
 
+    .wrap {
+        max-height: none;
+        border-radius: 0;
+    }
+
     .card {
         grid-row: span 1;
         grid-column: span 1;
@@ -60,11 +35,12 @@
     }
 }
 
-@media (max-width:728px) {
+@media (max-width:768px) {
     .header {
         flex-flow: column-reverse;
         height: auto;
         padding-left: 0;
+        padding: 45px 50px 38px 50px;
     }
     
     .title-inf {
@@ -95,14 +71,14 @@
         display: flex;
         align-items: center;
         padding-right: 40px;
-        padding-top: 20px;
+        padding-top: px;
     }
     
     .nav-btn {
-        top: 35px;
+        top: 20px;
     }
 
     .main {
-        padding: 0px 10px 10px 10px;
+        padding: 0px 20px 50px 20px;
     }
 }

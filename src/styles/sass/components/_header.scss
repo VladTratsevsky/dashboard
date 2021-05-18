@@ -1,12 +1,12 @@
 .header {
-    height: 137px;
     grid-area: header;
     background-color: #212427;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    padding-left: 96px;
+    padding: 45px 50px 38px 96px;
+    border-radius: 14px 14px 0px 0px;
 }
 
 .title-inf {
@@ -21,9 +21,7 @@
 }
 
 .header__title { 
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 36px;
+    @include header-text;
     margin-right: 45px;
 }
 
@@ -54,14 +52,11 @@
 .header__account {
     display: flex;
     align-items: center;
-    padding-right: 58px;
 }
 
 .account__name {
+    @include title-text(600);
     margin-right: 10px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
 }
 
 .account__menu {

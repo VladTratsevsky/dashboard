@@ -1,9 +1,7 @@
 .card {
     grid-area: card;
     grid-column: span 1;
-    background: #282C31;
-    border: 1px solid #4D4D4D;
-    border-radius: 13px;
+    @include border-card;
     box-sizing: border-box;
     padding: 24px;
 }
@@ -16,10 +14,7 @@
 }
 
 .card__title {
-    margin: 0;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 24px;
+    @include title-text (bold);
 }
 
 .card__menu {
@@ -31,12 +26,10 @@
 .card__inf {
     display: flex;
     justify-content: space-between;
-}
-
-.card__value {
-    margin: 0;
+    @include title-text (500);
 }
 
 .card__value-change {
-    margin: 0;
+    color: #979797;
 }
+

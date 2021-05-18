@@ -1,0 +1,28 @@
+@mixin title-text ($wight: bold) {
+    margin: 0;
+    font-weight: $wight;
+    font-size: 20px;
+    line-height: 24px;
+    color: $text-color;
+}
+
+@mixin header-text {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: $text-color;
+}
+
+@mixin inf-text ($wight: 600) {
+    margin: 0;
+    font-weight: $wight;
+    font-size: 12px;
+    line-height: 14px;
+    color: $text-color;
+}
+
+@mixin border-card {
+    background: #282C31;
+    border: 1px solid #4D4D4D;
+    border-radius: 13px;
+}
